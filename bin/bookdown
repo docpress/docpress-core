@@ -1,0 +1,79 @@
+#!/usr/bin/env node
+const Metalsmith = require('metalsmith')
+const each = require('lodash/collection/each')
+const marked = require('marked')
+
+var app = bookdown(process.cwd())
+app.build((err) => {
+  if (err) throw err
+})
+
+function bookdown (cwd) {
+  return Metalsmith(cwd)
+    .source('.')
+    .destination('_bookdown')
+    .ignore('**/*.!(md)') // ignore non-md files
+    .ignore('.*') // ignore dot directories
+    .ignore('node_modules')
+    .ignore('_bookdown') // ignore output
+    .ignore('_book')
+    .use(bookdownParse)
+}
+
+function bookdownParse (files, ms, done) {
+  var sources = Object.keys(files)
+  console.log(sources)
+
+  // 1: find or infer the TOC.
+  //    - strip out docs/ prefix
+  //    - turn the first page in the toc to `index.html`
+  //    - turn README to index
+  //    - flatten it as `pages`
+  var toc = {
+    sections: {
+      'index.html': {
+        source: 'README.md'
+      },
+      'docs.html': {
+        source: 'docs/docs.md',
+        sections: {
+          'rails.html': {
+            source: 'docs/rails.md'
+          }
+        }
+      },
+    }
+  }
+
+  files['toc.json'] = {
+    contents: JSON.stringify(toc) + '\n'
+  }
+
+  // 2: flatten TOC to pages.
+  var pages = {
+    'index.html': { source: 'README.md' },
+    'rails.html': { source: 'docs/rails.md' }
+  }
+
+  files['pages.json'] = {
+    contents: JSON.stringify(pages) + '\n'
+  }
+
+
+  // 3: render each page
+  each(pages, (opts, fname) => {
+    const file = files[opts.source]
+    file.markdown = file.contents
+    file.contents = marked(file.contents.toString(), { gfm: true, tables: true })
+    files[fname] = file
+  })
+
+  // 4: add assets
+
+  // delete sources
+  sources.forEach((fname) => {
+    delete files[fname]
+  })
+
+  done()
+}
