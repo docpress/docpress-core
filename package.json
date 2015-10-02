@@ -19,6 +19,8 @@
   },
   "devDependencies": {
     "expect": "1.11.1",
-    "mocha": "2.3.3"
+    "mocha": "2.3.3",
+    "mocha-standard": "1.0.0",
+    "standard": "5.3.1"
   }
 }

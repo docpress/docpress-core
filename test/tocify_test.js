@@ -1,40 +1,35 @@
 const tocify = require('../lib/tocify')
 
 describe('tocify', function () {
-  var toc = [
-    '# toc',
-    '',
-    '* [readme](/README.md)',
-  ].join('\n')
-
   var output
 
   it('works', function () {
     output = tocify([
-      '* [Readme](/README.md)',
+      '* [Readme](/README.md)'
     ].join('\n'))
 
     expect(output).toEqual({
-      sections: {
-        readme: {
+      sections: [
+        {
           title: 'Readme',
+          url: '/index.html',
           source: '/README.md'
         }
-      }
+      ]
     })
   })
 
   it('handles non-links', function () {
     output = tocify([
-      '* Readme',
+      '* Readme'
     ].join('\n'))
 
     expect(output).toEqual({
-      sections: {
-        readme: {
+      sections: [
+        {
           title: 'Readme'
         }
-      }
+      ]
     })
   })
 
@@ -47,26 +42,28 @@ describe('tocify', function () {
     ].join('\n'))
 
     expect(output).toEqual({
-      sections: {
-        readme: {
+      sections: [
+        {
           title: 'Readme',
-          source: '/README.md',
+          url: '/index.html',
+          source: '/README.md'
         },
-        'getting-started': {
+        {
           title: 'Getting Started',
-          sections: {
-            'install': {
+          sections: [
+            {
               title: 'Install',
-              source: '/docs/install.md',
+              url: '/docs/install.html',
+              source: '/docs/install.md'
             },
-            'usage': {
+            {
               title: 'Usage',
-              source: '/docs/usage.md',
+              url: '/docs/usage.html',
+              source: '/docs/usage.md'
             }
-          }
+          ]
         }
-      }
+      ]
     })
   })
-
 })
