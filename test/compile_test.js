@@ -1,6 +1,6 @@
-const base0 = require('../lib/base0')
+const compile = require('../lib/compile')
 
-describe('base0', function () {
+describe('compile', function () {
   beforeEach(function (done) {
     var ms = {}
     this.files = {
@@ -20,7 +20,7 @@ describe('base0', function () {
       }
     }
 
-    base0(this.files, ms, (err) => {
+    compile(this.files, ms, (err) => {
       if (err) throw err
       done()
     })
