@@ -29,9 +29,9 @@ describe('indexify', function () {
   it('works', function () {
     const index = indexify(toc)
     expect(index).toEqual({
-      'docs/install.html': { source: 'docs/install.md' },
-      'docs/usage.html': { source: 'docs/usage.md' },
-      'index.html': { source: 'README.md' }
+      'docs/install.html': { source: 'docs/install.md', title: 'Install' },
+      'docs/usage.html': { source: 'docs/usage.md', title: 'Usage' },
+      'index.html': { source: 'README.md', title: 'Readme' }
     })
   })
 })

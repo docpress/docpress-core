@@ -12,8 +12,8 @@ describe('tocify', function () {
       sections: [
         {
           title: 'Readme',
-          url: '/index.html',
-          source: '/README.md'
+          url: 'index.html',
+          source: 'README.md'
         }
       ]
     })
@@ -45,21 +45,21 @@ describe('tocify', function () {
       sections: [
         {
           title: 'Readme',
-          url: '/index.html',
-          source: '/README.md'
+          url: 'index.html',
+          source: 'README.md'
         },
         {
           title: 'Getting Started',
           sections: [
             {
               title: 'Install',
-              url: '/docs/install.html',
-              source: '/docs/install.md'
+              url: 'docs/install.html',
+              source: 'docs/install.md'
             },
             {
               title: 'Usage',
-              url: '/docs/usage.html',
-              source: '/docs/usage.md'
+              url: 'docs/usage.html',
+              source: 'docs/usage.md'
             }
           ]
         }
