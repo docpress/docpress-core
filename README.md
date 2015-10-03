@@ -15,3 +15,8 @@ docs/
   installation.md
   getting-started.md
 ```
+
+## API
+
+* `bookdown/base0` - Metalsmith middleware.
+* `bookdown` - Metalsmith generator.
