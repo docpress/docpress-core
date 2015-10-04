@@ -1,6 +1,7 @@
-var bookdown = require('../../')
+var bookdown = require('../../ms')
 
 var app = bookdown(__dirname)
+  .use(require('../../')())
 
 if (module.parent) {
   module.exports = app

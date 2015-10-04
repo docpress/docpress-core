@@ -53,12 +53,12 @@ describe('tocify', function () {
           sections: [
             {
               title: 'Install',
-              url: 'docs/install.html',
+              url: 'install.html',
               source: 'docs/install.md'
             },
             {
               title: 'Usage',
-              url: 'docs/usage.html',
+              url: 'usage.html',
               source: 'docs/usage.md'
             }
           ]
