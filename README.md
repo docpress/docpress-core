@@ -18,5 +18,5 @@ docs/
 
 ## API
 
-* `bookdown/base0` - Metalsmith middleware.
-* `bookdown` - Metalsmith generator.
+* `bookdown-core/compile` - Metalsmith middleware.
+* `bookdown-core` - Metalsmith generator.
