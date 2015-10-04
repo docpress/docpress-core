@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "coverage": "istanbul cover _mocha -- -R spec"
   },
   "author": "Rico Sta. Cruz <rico@ricostacruz.com>",
   "license": "MIT",
@@ -17,6 +18,7 @@
   },
   "devDependencies": {
     "expect": "1.11.1",
+    "istanbul": "0.3.21",
     "mocha": "2.3.3",
     "mocha-clean": "0.4.0",
     "mocha-standard": "1.0.0",
