@@ -1,13 +1,10 @@
 {
-  "name": "bookdown",
+  "name": "bookdown-core",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
-  },
-  "bin": {
-    "bookdown": "bin/bookdown"
   },
   "author": "",
   "license": "ISC",

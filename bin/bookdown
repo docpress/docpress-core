@@ -1,4 +1,0 @@
-#!/usr/bin/env node
-var bookdown = require('../lib')
-var app = bookdown(process.cwd())
-app.build((err) => { if (err) throw err })
