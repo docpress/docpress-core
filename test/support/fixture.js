@@ -18,7 +18,7 @@ Fixture.prototype.exists = function (file) {
   try {
     fs.statSync(this.path(file))
     return true
-  } catch (e) { }
+  } catch (e) { return false }
 }
 
 Fixture.prototype.read = function (file) {

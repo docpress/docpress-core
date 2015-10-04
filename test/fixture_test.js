@@ -30,6 +30,15 @@ describe('fixture', function () {
       .toInclude('</h1>')
   })
 
+  it('leaves assets alone', function () {
+    expect(fx.exists('_bookdown/assets/style.css')).toEqual(true)
+    expect(fx.exists('_bookdown/image.png')).toEqual(true)
+  })
+
+  it('deletes unused files', function () {
+    expect(fx.exists('_bookdown/README.md')).toEqual(false)
+  })
+
   describe('toc.json', function () {
     before(function () {
       data = fx.read('_bookdown/toc.json')

@@ -2,7 +2,13 @@ const compile = require('../index')()
 
 describe('compile', function () {
   beforeEach(function (done) {
-    var ms = {}
+    // Mock metalsmith object
+    var ms = {
+      metadata () {
+        return { docs: 'docs' }
+      }
+    }
+
     this.files = {
       'docs/README.md': {
         contents: [
