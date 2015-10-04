@@ -1,4 +1,4 @@
-# bookdown
+# bookdown-core
 
 How it works:
 
@@ -18,5 +18,5 @@ docs/
 
 ## API
 
-* `bookdown-core/compile` - Metalsmith middleware.
-* `bookdown-core` - Metalsmith generator.
+* `bookdown-core` - Metalsmith middleware.
+* `bookdown-core/ms` - Metalsmith instance generator.

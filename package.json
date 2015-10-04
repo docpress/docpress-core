@@ -6,8 +6,8 @@
   "scripts": {
     "test": "mocha"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Rico Sta. Cruz <rico@ricostacruz.com>",
+  "license": "MIT",
   "dependencies": {
     "lodash": "3.10.1",
     "marked": "0.3.5",

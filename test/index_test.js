@@ -1,4 +1,4 @@
-const compile = require('../lib/compile')()
+const compile = require('../index')()
 
 describe('compile', function () {
   beforeEach(function (done) {
