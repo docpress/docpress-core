@@ -1,8 +1,8 @@
 /* istanbul ignore next */
 (function() {
-  var bookdown = require('../../ms')
+  var docpress = require('../../ms')
 
-  var app = bookdown(__dirname)
+  var app = docpress(__dirname)
     .use(require('../../')())
 
   if (module.parent) {

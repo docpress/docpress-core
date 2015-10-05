@@ -1,4 +1,4 @@
-# bookdown-core
+# docpress-core
 
 How it works:
 
@@ -18,5 +18,5 @@ docs/
 
 ## API
 
-* `bookdown-core` - Metalsmith middleware.
-* `bookdown-core/ms` - Metalsmith instance generator.
+* `docpress-core` - Metalsmith middleware.
+* `docpress-core/ms` - Metalsmith instance generator.

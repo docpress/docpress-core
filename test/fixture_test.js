@@ -16,32 +16,32 @@ describe('fixture', function () {
   })
 
   it('outputs the right files', function () {
-    expect(fx.exists('_bookdown/index.html')).toEqual(true)
-    expect(fx.exists('_bookdown/index.json')).toEqual(true)
-    expect(fx.exists('_bookdown/toc.json')).toEqual(true)
-    expect(fx.exists('_bookdown/testing.html')).toEqual(true)
-    expect(fx.exists('_bookdown/cleanup.html')).toEqual(true)
+    expect(fx.exists('_docpress/index.html')).toEqual(true)
+    expect(fx.exists('_docpress/index.json')).toEqual(true)
+    expect(fx.exists('_docpress/toc.json')).toEqual(true)
+    expect(fx.exists('_docpress/testing.html')).toEqual(true)
+    expect(fx.exists('_docpress/cleanup.html')).toEqual(true)
   })
 
   it('renders htmls', function () {
-    expect(fx.read('_bookdown/index.html').toLowerCase())
+    expect(fx.read('_docpress/index.html').toLowerCase())
       .toInclude('</h1>')
-    expect(fx.read('_bookdown/testing.html').toLowerCase())
+    expect(fx.read('_docpress/testing.html').toLowerCase())
       .toInclude('</h1>')
   })
 
   it('leaves assets alone', function () {
-    expect(fx.exists('_bookdown/assets/style.css')).toEqual(true)
-    expect(fx.exists('_bookdown/image.png')).toEqual(true)
+    expect(fx.exists('_docpress/assets/style.css')).toEqual(true)
+    expect(fx.exists('_docpress/image.png')).toEqual(true)
   })
 
   it('deletes unused files', function () {
-    expect(fx.exists('_bookdown/README.md')).toEqual(false)
+    expect(fx.exists('_docpress/README.md')).toEqual(false)
   })
 
   describe('toc.json', function () {
     before(function () {
-      data = fx.read('_bookdown/toc.json')
+      data = fx.read('_docpress/toc.json')
     })
 
     it('renders', function () {
@@ -52,7 +52,7 @@ describe('fixture', function () {
 
   describe('index.json', function () {
     before(function () {
-      data = fx.read('_bookdown/index.json')
+      data = fx.read('_docpress/index.json')
     })
 
     it('renders', function () {
