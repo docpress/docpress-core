@@ -1,7 +1,9 @@
-const tocify = require('../lib/tocify')
+'use strict'
+
+const tocify = require('../../lib/tocify')
 
 describe('tocify', function () {
-  var output
+  let output
 
   it('works', function () {
     output = tocify([
@@ -96,50 +98,6 @@ describe('tocify', function () {
               source: 'docs/usage.md'
             }
           ]
-        }
-      ]
-    })
-  })
-
-  it('handles relative URLs', function () {
-    output = tocify([
-      '* [Readme](../README.md)',
-      '* [Install](install.md)'
-    ].join('\n'))
-
-    expect(output).toEqual({
-      sections: [
-        {
-          title: 'Readme',
-          url: 'index.html',
-          source: 'README.md'
-        },
-        {
-          title: 'Install',
-          url: 'install.html',
-          source: 'docs/install.md'
-        }
-      ]
-    })
-  })
-
-  it('handles extreme ../ in URLs', function () {
-    output = tocify([
-      '* [Readme](../docs/../README.md)',
-      '* [Install](../docs/../docs/install.md)'
-    ].join('\n'))
-
-    expect(output).toEqual({
-      sections: [
-        {
-          title: 'Readme',
-          url: 'index.html',
-          source: 'README.md'
-        },
-        {
-          title: 'Install',
-          url: 'install.html',
-          source: 'docs/install.md'
         }
       ]
     })
