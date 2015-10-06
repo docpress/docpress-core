@@ -6,7 +6,8 @@ describe('indexify', function () {
       {
         title: 'Readme',
         url: 'index.html',
-        source: 'README.md'
+        source: 'README.md',
+        slug: 'index'
       },
       {
         title: 'Getting Started',
@@ -14,12 +15,14 @@ describe('indexify', function () {
           {
             title: 'Install',
             url: 'docs/install.html',
-            source: 'docs/install.md'
+            source: 'docs/install.md',
+            slug: 'install'
           },
           {
             title: 'Usage',
             url: 'docs/usage.html',
-            source: 'docs/usage.md'
+            source: 'docs/usage.md',
+            slug: 'usage'
           }
         ]
       }
@@ -29,9 +32,15 @@ describe('indexify', function () {
   it('works', function () {
     const index = indexify(toc)
     expect(index).toEqual({
-      'docs/install.html': { source: 'docs/install.md', title: 'Install' },
-      'docs/usage.html': { source: 'docs/usage.md', title: 'Usage' },
-      'index.html': { source: 'README.md', title: 'Readme' }
+      'docs/install.html': {
+        source: 'docs/install.md', title: 'Install', slug: 'install'
+      },
+      'docs/usage.html': {
+        source: 'docs/usage.md', title: 'Usage', slug: 'usage'
+      },
+      'index.html': {
+        source: 'README.md', title: 'Readme', slug: 'index'
+      }
     })
   })
 })
