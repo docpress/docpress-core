@@ -6,8 +6,10 @@ describe('to do', function () {
   it('test fail cases', done)
   it('prettifying pages', done)
   it('handle relative urls', done)
-  it('validating toc')
-  it('transforming links')
+  it('validating toc', done)
+  it('allow http:// links')
+  it('transforming links in document')
+  it('index sub-toc')
 })
 
 function done () {}
