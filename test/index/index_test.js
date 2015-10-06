@@ -39,6 +39,7 @@ describe('compile', function () {
     expect(idx.contents).toEqual('<h1 id="hello">hello</h1>\n')
     expect(idx.markdown).toBeA('string')
     expect(idx.source).toEqual('README.md')
+    expect(idx.slug).toEqual('index')
   })
 
   describe('toc.json:', function () {
