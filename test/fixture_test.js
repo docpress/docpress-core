@@ -42,22 +42,22 @@ describe('fixture', function () {
   describe('toc.json', function () {
     before(function () {
       data = fx.read('_docpress/toc.json')
+      data = JSON.parse(data)
     })
 
-    it('renders', function () {
-      expect(data.length).toBeGreaterThan(1)
-      JSON.parse(data)
+    it('renders proper json', function () { })
+
+    it('has headings', function () {
+      expect(data.sections[0].headings.length).toBeGreaterThan(2)
     })
   })
 
   describe('index.json', function () {
     before(function () {
       data = fx.read('_docpress/index.json')
+      data = JSON.parse(data)
     })
 
-    it('renders', function () {
-      expect(data.length).toBeGreaterThan(1)
-      JSON.parse(data)
-    })
+    it('renders proper json', function () { })
   })
 })

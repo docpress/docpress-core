@@ -2,7 +2,7 @@
 
 const tocifyPage = require('../lib/tocify_page')
 
-describe('tocifyPage()', function () {
+describe('tocifyPage(): with stuff', function () {
   let output
 
   beforeEach(function () {
@@ -40,5 +40,17 @@ describe('tocifyPage()', function () {
     expect(output.map((h) => h.depth)).toEqual([
       2, 2, 3, 3, 2
     ])
+  })
+})
+
+describe('tocifyPage(): without stuff', function () {
+  let output
+
+  beforeEach(function () {
+    output = tocifyPage('# hi')
+  })
+
+  it('renders titles', function () {
+    expect(output).toNotExist()
   })
 })
