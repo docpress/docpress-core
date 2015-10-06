@@ -16,12 +16,14 @@ describe('tocify: relative', function () {
         {
           title: 'Readme',
           url: 'index.html',
-          source: 'README.md'
+          source: 'README.md',
+          slug: 'index'
         },
         {
           title: 'Install',
           url: 'install.html',
-          source: 'docs/install.md'
+          source: 'docs/install.md',
+          slug: 'install'
         }
       ]
     })
@@ -38,12 +40,14 @@ describe('tocify: relative', function () {
         {
           title: 'Readme',
           url: 'index.html',
-          source: 'README.md'
+          source: 'README.md',
+          slug: 'index'
         },
         {
           title: 'Install',
           url: 'install.html',
-          source: 'docs/install.md'
+          source: 'docs/install.md',
+          slug: 'install'
         }
       ]
     })

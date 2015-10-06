@@ -15,7 +15,8 @@ describe('tocify', function () {
         {
           title: 'Readme',
           url: 'index.html',
-          source: 'README.md'
+          source: 'README.md',
+          slug: 'index'
         }
       ]
     })
@@ -48,7 +49,8 @@ describe('tocify', function () {
         {
           title: 'Readme',
           url: 'index.html',
-          source: 'README.md'
+          source: 'README.md',
+          slug: 'index'
         },
         {
           title: 'Getting Started',
@@ -56,12 +58,14 @@ describe('tocify', function () {
             {
               title: 'Install',
               url: 'install.html',
-              source: 'docs/install.md'
+              source: 'docs/install.md',
+              slug: 'install'
             },
             {
               title: 'Usage',
               url: 'usage.html',
-              source: 'docs/usage.md'
+              source: 'docs/usage.md',
+              slug: 'usage'
             }
           ]
         }
@@ -82,7 +86,8 @@ describe('tocify', function () {
         {
           title: 'Readme',
           url: 'index.html',
-          source: 'README.md'
+          source: 'README.md',
+          slug: 'index'
         },
         {
           title: 'Getting Started',
@@ -90,12 +95,14 @@ describe('tocify', function () {
             {
               title: 'Install',
               url: 'install.html',
-              source: 'docs/install.md'
+              source: 'docs/install.md',
+              slug: 'install'
             },
             {
               title: 'Usage',
               url: 'usage.html',
-              source: 'docs/usage.md'
+              source: 'docs/usage.md',
+              slug: 'usage'
             }
           ]
         }

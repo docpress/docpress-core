@@ -58,7 +58,8 @@ describe('compile', function () {
       expect(section).toEqual({
         title: 'Readme',
         source: 'README.md',
-        url: 'index.html'
+        url: 'index.html',
+        slug: 'index'
       })
     })
   })
