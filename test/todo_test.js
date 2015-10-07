@@ -9,7 +9,10 @@ describe('to do', function () {
   it('validating toc', done)
   it('allow http:// links')
   it('transforming links in document')
-  it('index sub-toc')
+  it('index sub-toc', done)
+  it('single readme mode')
+  it('account for links in headings')
+  it('account for question marks in headings')
 })
 
 function done () {}
