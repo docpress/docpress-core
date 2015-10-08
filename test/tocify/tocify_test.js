@@ -109,4 +109,22 @@ describe('tocify', function () {
       ]
     })
   })
+
+  xit('handles expand', function () {
+    output = tocify([
+      '* *[Readme](/README.md)*'
+    ].join('\n'))
+
+    expect(output).toEqual({
+      sections: [
+        {
+          title: 'Readme',
+          url: 'index.html',
+          source: 'README.md',
+          slug: 'index',
+          expand: true
+        }
+      ]
+    })
+  })
 })

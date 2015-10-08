@@ -16,29 +16,14 @@ describe('tocifyPage(): with stuff', function () {
     ].join('\n') + '\n')
   })
 
-  it('renders titles', function () {
-    expect(output.map((h) => h.title)).toEqual([
-      'Usage',
-      'Installation',
-      'via npm',
-      'via Bower',
-      'Thanks'
-    ])
-  })
-
-  it('renders ids', function () {
-    expect(output.map((h) => h.id)).toEqual([
-      'usage',
-      'installation',
-      'via-npm',
-      'via-bower',
-      'thanks'
-    ])
-  })
-
-  it('renders depths', function () {
-    expect(output.map((h) => h.depth)).toEqual([
-      2, 2, 3, 3, 2
+  it('renders', function () {
+    expect(output).toEqual([
+      { title: 'Usage', depth: 2, id: 'usage' },
+      { title: 'Installation', depth: 2, id: 'installation', headings: [
+        { title: 'via npm', depth: 3, id: 'via-npm' },
+        { title: 'via Bower', depth: 3, id: 'via-bower' }
+      ]},
+      { title: 'Thanks', depth: 2, id: 'thanks' }
     ])
   })
 })
