@@ -11,6 +11,9 @@ describe('to do', function () {
   it('transforming links in document')
   it('index sub-toc', done)
   it('single readme mode')
+  it('expand mode', done) /* make it bold in the TOC */
+  it('warn when no pages are parsed')
+  it('previous/next')
   it('account for links in headings')
   it('account for question marks in headings')
 })
