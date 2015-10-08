@@ -110,9 +110,9 @@ describe('tocify', function () {
     })
   })
 
-  xit('handles expand', function () {
+  it('handles expand', function () {
     output = tocify([
-      '* *[Readme](/README.md)*'
+      '* **[Readme](/README.md)**'
     ].join('\n'))
 
     expect(output).toEqual({
