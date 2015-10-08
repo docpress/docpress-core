@@ -16,6 +16,7 @@ describe('to do', function () {
   it('previous/next')
   it('account for links in headings')
   it('account for question marks in headings')
+  it('move loading plugins into docpress-core/ms')
 })
 
 function done () {}
