@@ -3,6 +3,15 @@
 var join = require('path').join
 var fs = require('fs')
 
+/**
+ * Fixture helper.
+ *
+ *     foo = fixture('foo')
+ *     foo.exists('package.json')
+ *     foo.path('package.json')
+ *     foo.read('package.json')
+ */
+
 function Fixture (path) {
   if (!(this instanceof Fixture)) return new Fixture(path)
   this.root = path
@@ -11,7 +20,7 @@ function Fixture (path) {
 Fixture.root = join(__dirname, '../../fixture')
 
 Fixture.prototype.path = function (file) {
-  return join(Fixture.root, this.root, file)
+  return join(Fixture.root, this.root, file || '')
 }
 
 Fixture.prototype.exists = function (file) {
