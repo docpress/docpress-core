@@ -23,7 +23,7 @@ describe('to do', function () {
 
   describe('transforming html', function () {
     it('transforming links in document')
-    it('highlight it already')
+    it('syntax highlighting', done)
   })
 })
 
