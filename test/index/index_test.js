@@ -44,8 +44,8 @@ describe('index:', function () {
 
   describe('toc.json:', function () {
     beforeEach(function () {
-      this.tocFile = this.files['toc.json']
-      this.toc = JSON.parse(this.tocFile.contents)
+      this.tocFile = this.files['docpress.json']
+      this.toc = JSON.parse(this.tocFile.contents).toc
     })
 
     it('renders.json', function () {

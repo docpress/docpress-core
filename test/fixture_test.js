@@ -17,8 +17,7 @@ describe('fixture', function () {
 
   it('outputs the right files', function () {
     expect(fx.exists('_docpress/index.html')).toEqual(true)
-    expect(fx.exists('_docpress/index.json')).toEqual(true)
-    expect(fx.exists('_docpress/toc.json')).toEqual(true)
+    expect(fx.exists('_docpress/docpress.json')).toEqual(true)
     expect(fx.exists('_docpress/testing.html')).toEqual(true)
     expect(fx.exists('_docpress/cleanup.html')).toEqual(true)
   })
@@ -39,10 +38,29 @@ describe('fixture', function () {
     expect(fx.exists('_docpress/README.md')).toEqual(false)
   })
 
-  describe('toc.json', function () {
+  describe('docpress.json', function () {
     before(function () {
-      data = fx.read('_docpress/toc.json')
+      data = fx.read('_docpress/docpress.json')
       data = JSON.parse(data)
+    })
+
+    it('has index', function () {
+      expect(data.index).toExist()
+    })
+
+    it('has toc', function () {
+      expect(data.toc).toExist()
+    })
+
+    it('has sources', function () {
+      expect(data.sources).toExist()
+    })
+  })
+
+  describe('docpress.json/toc', function () {
+    before(function () {
+      data = fx.read('_docpress/docpress.json')
+      data = JSON.parse(data).toc
     })
 
     it('renders proper json', function () { })
@@ -52,10 +70,10 @@ describe('fixture', function () {
     })
   })
 
-  describe('index.json', function () {
+  describe('docpress.json/index', function () {
     before(function () {
-      data = fx.read('_docpress/index.json')
-      data = JSON.parse(data)
+      data = fx.read('_docpress/docpress.json')
+      data = JSON.parse(data).index
     })
 
     it('renders proper json', function () { })
