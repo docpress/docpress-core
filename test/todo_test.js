@@ -15,13 +15,13 @@ describe('to do', function () {
     it('bug: linking to #anchors', done)
     it('bug: linking to #anchors in toc', done)
     it('link urls (http://...)', done)
+    it('single readme mode', done)
+    it('account for links in headings', done)
+    it('account for question marks in headings', done)
   })
 
   describe('to do', function () {
-    it('single readme mode')
     it('warn when no pages are parsed')
-    it('account for links in headings')
-    it('account for question marks in headings')
     it('move loading plugins into docpress-core/ms')
     it('delete docpress.json')
   })
