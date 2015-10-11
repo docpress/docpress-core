@@ -27,6 +27,6 @@ describe('index/invalid refs:', function () {
   it('catches invalid references', function () {
     expect(this.err).toExist()
     expect(this.err.message).toEqual(
-      "index.html: Unknown reference 'docs/getting-started.md'")
+      "README.md: Unknown reference 'docs/getting-started.md'")
   })
 })
