@@ -21,6 +21,8 @@ describe('to do', function () {
   })
 
   describe('to do', function () {
+    it('allow linking of table of contents (!)')
+    it('custom homepage instead of readme.md (!)')
     it('warn when no pages are parsed')
     it('move loading plugins into docpress-core/ms')
     it('delete docpress.json')
