@@ -19,6 +19,7 @@ describe('to do', function () {
     it('account for links in headings')
     it('account for question marks in headings')
     it('move loading plugins into docpress-core/ms')
+    it('delete docpress.json')
   })
 
   describe('transforming html', function () {
