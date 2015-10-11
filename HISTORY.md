@@ -1,3 +1,7 @@
+## master
+
+- implement tocless mode
+
 ## [v0.2.0]
 > Oct 12, 2015
 
