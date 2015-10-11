@@ -13,9 +13,10 @@ describe('to do', function () {
   })
 
   describe('to do', function () {
-    it('bug: linking pages inside sub-directories')
-    it('bug: linking pages with absolute references')
-    it('bug: linking to #anchors')
+    it('bug: linking pages inside sub-directories', done)
+    it('bug: linking pages with absolute references', done)
+    it('bug: linking to #anchors', done)
+    it('bug: linking to #anchors in toc')
     it('single readme mode')
     it('warn when no pages are parsed')
     it('account for links in headings')
