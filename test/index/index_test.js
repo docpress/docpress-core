@@ -1,6 +1,6 @@
 const compile = require('../../index')()
 
-describe('compile', function () {
+describe('index:', function () {
   beforeEach(function (done) {
     // Mock metalsmith object
     var ms = {

@@ -1,6 +1,6 @@
 const compile = require('../../index')()
 
-describe('index/missing pages:', function () {
+describe('index/invalid refs:', function () {
   beforeEach(function (done) {
     // Mock metalsmith object
     var ms = {
@@ -11,13 +11,10 @@ describe('index/missing pages:', function () {
 
     this.files = {
       'docs/README.md': {
-        contents: [
-          '* [Readme](/README.md)',
-          '* [Getting started](/docs/getting-started.md)'
-        ].join('\n') + '\n'
+        contents: '* [Readme](/README.md)\n'
       },
       'README.md': {
-        contents: '# hello\n'
+        contents: '[getting started](docs/getting-started.md)\n'
       }
     }
 
@@ -27,8 +24,9 @@ describe('index/missing pages:', function () {
     })
   })
 
-  it('works', function () {
+  it('catches invalid references', function () {
     expect(this.err).toExist()
-    expect(this.err.message).toEqual(`Invalid reference 'docs/getting-started.md'`)
+    expect(this.err.message).toEqual(
+      "index.html: Unknown reference 'docs/getting-started.md'")
   })
 })
