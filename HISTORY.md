@@ -1,6 +1,7 @@
 ## master
 
-- implement tocless mode
+- Table of contents(` docs/README.md`) is now optional
+- Markdown code is now stripped out of TOC names
 
 ## [v0.2.0]
 > Oct 12, 2015
