@@ -14,7 +14,7 @@ describe('index/unused md files:', function () {
         contents: '* [Readme](/README.md)'
       },
       'README.md': {
-        contents: '[getting started](docs/getting-started.md)'
+        contents: ''
       },
       'docs/getting-started.md': {
         contents: 'hi'
