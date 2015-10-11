@@ -2,20 +2,7 @@
 
 Metalsmith plugin to generate Docpress site data from a project. Part of the [Docpress] project.
 
-This plugin generates bare HTML files (just rendered from Markdown) from a project. It also creates a `toc.json` (Table of contents) and `index.json` (Page index). This is usually used with [docpress-base], which will then prettify those pages into a full-fleged website.
-
-## How it works
-
-Make a TOC in `docs/README.md`. This will be used to crawl the project for files to be parsed. Here's an example structure:
-
-```
-README.md
-docs/
-  README.md
-  usage.md
-  installation.md
-  getting-started.md
-```
+This plugin generates _bare_ HTML files (just rendered from Markdown) from a project. It also creates a `_docpress.json` with table of contents and index. This is usually used with [docpress-base], which will then prettify those pages into a full-fleged website.
 
 ## API
 
@@ -24,7 +11,7 @@ You get these modules:
 - `docpress-core` The main Metalsmith middleware.
 - `docpress-core/ms` - Metalsmith instance generator.
 
-You use them together like so:
+In a bare Metalsmith site, you use them together like so:
 
 ```js
 var app = require('docpress-core/ms')(cwd)
