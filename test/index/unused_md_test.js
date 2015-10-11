@@ -1,6 +1,6 @@
 const compile = require('../../index')()
 
-describe('index/fix refs:', function () {
+describe('index/unused md files:', function () {
   beforeEach(function (done) {
     // Mock metalsmith object
     var ms = {
@@ -11,9 +11,7 @@ describe('index/fix refs:', function () {
 
     this.files = {
       'docs/README.md': {
-        contents:
-          '* [Readme](/README.md)\n' +
-          '* [Getting started](/docs/getting-started.md)\n'
+        contents: '* [Readme](/README.md)'
       },
       'README.md': {
         contents: '[getting started](docs/getting-started.md)'
@@ -29,9 +27,9 @@ describe('index/fix refs:', function () {
     })
   })
 
-  it('works', function () {
-    expect(this.files['index.html'].contents).toEqual(
-      '<p><a href="getting-started.html">getting started</a></p>\n'
-    )
+  it('removes unprocessed .md files', function () {
+    expect(Object.keys(this.files)).toEqual([
+      'toc.json', 'index.json', 'sources.json', 'index.html'
+    ])
   })
 })

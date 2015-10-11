@@ -29,7 +29,18 @@ describe('index/image refs:', function () {
 
   it('works', function () {
     expect(this.files['index.html'].contents).toEqual(
-      '<p><img src="docs/images/screenshot.png" alt=""></p>\n'
+      '<p><img src="images/screenshot.png" alt=""></p>\n'
     )
+  })
+
+  it('adds to sources', function () {
+    expect(JSON.parse(this.files['sources.json'].contents)).toEqual({
+      'README.md': 'index.html',
+      'docs/images/screenshot.png': 'images/screenshot.png'
+    })
+  })
+
+  it('preserves the image', function () {
+    expect(this.files['images/screenshot.png']).toExist()
   })
 })
