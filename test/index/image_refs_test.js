@@ -34,7 +34,7 @@ describe('index/image refs:', function () {
   })
 
   it('adds to sources', function () {
-    expect(JSON.parse(this.files['docpress.json'].contents).sources).toEqual({
+    expect(JSON.parse(this.files['_docpress.json'].contents).sources).toEqual({
       'README.md': 'index.html',
       'docs/images/screenshot.png': 'images/screenshot.png'
     })

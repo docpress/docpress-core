@@ -9,7 +9,8 @@ describe('fixture', function () {
 
   before(function (done) {
     app = require(fx.path('metalsmith.js'))
-    app.build((err) => {
+    app.build((err, files) => {
+      this.files = files
       if (err) return done(err)
       done()
     })
@@ -17,9 +18,16 @@ describe('fixture', function () {
 
   it('outputs the right files', function () {
     expect(fx.exists('_docpress/index.html')).toEqual(true)
-    expect(fx.exists('_docpress/docpress.json')).toEqual(true)
+    expect(fx.exists('_docpress/_docpress.json')).toEqual(true)
     expect(fx.exists('_docpress/testing.html')).toEqual(true)
     expect(fx.exists('_docpress/cleanup.html')).toEqual(true)
+  })
+
+  it('outputs the right files for plugins', function () {
+    expect(this.files['index.html']).toExist()
+    expect(this.files['_docpress.json']).toExist()
+    expect(this.files['testing.html']).toExist()
+    expect(this.files['cleanup.html']).toExist()
   })
 
   it('renders htmls', function () {
@@ -38,9 +46,9 @@ describe('fixture', function () {
     expect(fx.exists('_docpress/README.md')).toEqual(false)
   })
 
-  describe('docpress.json', function () {
+  describe('_docpress.json', function () {
     before(function () {
-      data = fx.read('_docpress/docpress.json')
+      data = fx.read('_docpress/_docpress.json')
       data = JSON.parse(data)
     })
 
@@ -57,9 +65,9 @@ describe('fixture', function () {
     })
   })
 
-  describe('docpress.json/toc', function () {
+  describe('_docpress.json/toc', function () {
     before(function () {
-      data = fx.read('_docpress/docpress.json')
+      data = fx.read('_docpress/_docpress.json')
       data = JSON.parse(data).toc
     })
 
@@ -70,9 +78,9 @@ describe('fixture', function () {
     })
   })
 
-  describe('docpress.json/index', function () {
+  describe('_docpress.json/index', function () {
     before(function () {
-      data = fx.read('_docpress/docpress.json')
+      data = fx.read('_docpress/_docpress.json')
       data = JSON.parse(data).index
     })
 
