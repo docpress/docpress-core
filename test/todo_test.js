@@ -10,19 +10,19 @@ describe('to do', function () {
     it('validating toc', done)
     it('index sub-toc', done)
     it('expand mode', done) /* make it bold in the TOC */
-  })
-
-  describe('to do', function () {
     it('bug: linking pages inside sub-directories', done)
     it('bug: linking pages with absolute references', done)
     it('bug: linking to #anchors', done)
-    it('bug: linking to #anchors in toc')
+    it('bug: linking to #anchors in toc', done)
+    it('link urls (http://...)', done)
+  })
+
+  describe('to do', function () {
     it('single readme mode')
     it('warn when no pages are parsed')
     it('account for links in headings')
     it('account for question marks in headings')
     it('move loading plugins into docpress-core/ms')
-    it('link urls (http://...)')
     it('delete docpress.json')
   })
 
