@@ -14,13 +14,13 @@ describe('indexify', function () {
         sections: [
           {
             title: 'Install',
-            url: 'docs/install.html',
+            url: 'install.html',
             source: 'docs/install.md',
             slug: 'install'
           },
           {
             title: 'Usage',
-            url: 'docs/usage.html',
+            url: 'usage.html',
             source: 'docs/usage.md',
             slug: 'usage'
           }
@@ -32,15 +32,24 @@ describe('indexify', function () {
   it('index works', function () {
     const res = indexify(toc)
     expect(res.index).toEqual({
-      'docs/install.html': {
+      'install.html': {
         source: 'docs/install.md', title: 'Install', slug: 'install'
       },
-      'docs/usage.html': {
+      'usage.html': {
         source: 'docs/usage.md', title: 'Usage', slug: 'usage'
       },
       'index.html': {
         source: 'README.md', title: 'Readme', slug: 'index'
       }
+    })
+  })
+
+  it('sources works', function () {
+    const res = indexify(toc)
+    expect(res.sources).toEqual({
+      'docs/install.md': 'install.html',
+      'docs/usage.md': 'usage.html',
+      'README.md': 'index.html'
     })
   })
 })
