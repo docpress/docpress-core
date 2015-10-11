@@ -1,6 +1,6 @@
 const compile = require('../../index')()
 
-describe('compile: docpress.json', function () {
+describe('index/docpress.json:', function () {
   beforeEach(function (done) {
     // Mock metalsmith object
     this.ms = {
