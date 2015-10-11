@@ -29,9 +29,9 @@ describe('indexify', function () {
     ]
   }
 
-  it('works', function () {
-    const index = indexify(toc)
-    expect(index).toEqual({
+  it('index works', function () {
+    const res = indexify(toc)
+    expect(res.index).toEqual({
       'docs/install.html': {
         source: 'docs/install.md', title: 'Install', slug: 'install'
       },
