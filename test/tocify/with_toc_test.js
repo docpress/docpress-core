@@ -18,9 +18,9 @@ describe('tocify', function () {
       sections: [
         {
           title: 'Install',
-          url: 'install.html',
+          url: 'index.html',
           source: 'docs/install.md',
-          slug: 'install',
+          slug: 'index',
           headings: [
             { id: 'hi', title: 'Hi', depth: 2 },
             { id: 'there', title: 'There', depth: 2 }

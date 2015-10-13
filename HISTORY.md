@@ -1,7 +1,8 @@
 ## master
 
-- Table of contents(` docs/README.md`) is now optional
+- Table of contents (`docs/README.md`) is now optional
 - Markdown code is now stripped out of TOC names
+- The first page will always be the home page
 
 ## [v0.2.0]
 > Oct 12, 2015

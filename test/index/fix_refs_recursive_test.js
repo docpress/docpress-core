@@ -12,8 +12,12 @@ describe('index/fix refs recursive:', function () {
     this.files = {
       'docs/README.md': {
         contents:
+          '* [My project](/README.md)\n' +
           '* [Introduction](/docs/introduction.md)\n' +
           '* [Getting started](/docs/getting-started.md)\n'
+      },
+      'README.md': {
+        contents: '# Readme'
       },
       'docs/getting-started.md': {
         contents: 'hi'

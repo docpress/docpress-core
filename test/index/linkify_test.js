@@ -11,7 +11,12 @@ describe('index/linkify:', function () {
 
     this.files = {
       'docs/README.md': {
-        contents: '* [Intro](intro.md)'
+        contents:
+          '* [README](../README.md)\n' +
+          '* [Intro](intro.md)'
+      },
+      'README.md': {
+        contents: '# Readme'
       },
       'docs/intro.md': {
         contents: 'http://google.com'

@@ -11,9 +11,9 @@ describe('index/readme case sensitivity:', function () {
 
     this.files = {
       'docs/Readme.md': {
-        contents: '* [Intro](intro.md)'
+        contents: '* [Intro](../README.md)'
       },
-      'docs/intro.md': {
+      'README.md': {
         contents: '# Introduction\n'
       }
     }
@@ -25,6 +25,6 @@ describe('index/readme case sensitivity:', function () {
   })
 
   it('renders', function () {
-    expect(this.files['intro.html']).toExist()
+    expect(this.files['index.html']).toExist()
   })
 })

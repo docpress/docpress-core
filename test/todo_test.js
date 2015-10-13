@@ -42,7 +42,6 @@ describe('to do', function () {
     it('warn when no pages are parsed')
     it('move loading plugins into docpress-core/ms')
   })
-
 })
 
 function done () {}

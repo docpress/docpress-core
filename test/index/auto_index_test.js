@@ -1,6 +1,6 @@
 const compile = require('../../index')()
 
-describe('index/basic:', function () {
+describe('index/auto index:', function () {
   beforeEach(function (done) {
     // Mock metalsmith object
     var ms = {
@@ -10,15 +10,10 @@ describe('index/basic:', function () {
     }
 
     this.files = {
-      'docs/README.md': {
-        contents:
-          '* [My project](../README.md)\n' +
-          '* [Intro](intro.md)\n'
+      'docs/Readme.md': {
+        contents: '* [First page](foo/bar/baz.md)'
       },
-      'README.md': {
-        contents: '# My project\n'
-      },
-      'docs/intro.md': {
+      'docs/foo/bar/baz.md': {
         contents: '# Introduction\n'
       }
     }
@@ -30,6 +25,6 @@ describe('index/basic:', function () {
   })
 
   it('renders', function () {
-    expect(this.files['intro.html']).toExist()
+    expect(this.files['index.html']).toExist()
   })
 })
