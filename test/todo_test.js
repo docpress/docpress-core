@@ -28,8 +28,8 @@ describe('to do', function () {
   })
 
   describe('diff homepage', function () {
-    it('allow linking of table of contents (!)')
-    it('custom homepage instead of readme.md (!)')
+    it('allow linking of table of contents', done)
+    it('custom homepage instead of readme.md', done)
   })
 
   describe('transforming html', function () {

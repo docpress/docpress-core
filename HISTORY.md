@@ -3,6 +3,7 @@
 - Table of contents (`docs/README.md`) is now optional
 - Markdown code is now stripped out of TOC names
 - The first page will always be the home page
+- You can now link Table of Contents as part of the site
 
 ## [v0.2.0]
 > Oct 12, 2015

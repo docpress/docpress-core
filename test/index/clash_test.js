@@ -33,4 +33,9 @@ describe('index/clash:', function () {
     expect(this.files['index.html']).toExist()
     expect(this.files['index-2.html']).toExist()
   })
+
+  it('updates slugs', function () {
+    expect(this.files['index.html'].slug).toEqual('index')
+    expect(this.files['index-2.html'].slug).toEqual('index-2')
+  })
 })
