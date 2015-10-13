@@ -12,8 +12,12 @@ describe('index/toc with multiple anchors:', function () {
     this.files = {
       'docs/README.md': {
         contents:
+          '* [Readme](../README.md)\n' +
           '* [Intro 1](intro.md#xyz)\n' +
           '* [Intro 2](intro.md#abc)\n'
+      },
+      'README.md': {
+        contents: '# Readme\n'
       },
       'docs/intro.md': {
         contents: '# Introduction\n'
@@ -31,7 +35,7 @@ describe('index/toc with multiple anchors:', function () {
   })
 
   it('sets .anchor', function () {
-    expect(this.files['_docpress.json'].toc.sections[0].anchor).toEqual('#xyz')
-    expect(this.files['_docpress.json'].toc.sections[1].anchor).toEqual('#abc')
+    expect(this.files['_docpress.json'].toc.sections[1].anchor).toEqual('#xyz')
+    expect(this.files['_docpress.json'].toc.sections[2].anchor).toEqual('#abc')
   })
 })
