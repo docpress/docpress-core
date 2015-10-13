@@ -20,12 +20,16 @@ describe('to do', function () {
     it('account for question marks in headings', done)
   })
 
-  describe('to do', function () {
+  describe('config', function () {
+    it('load from docpress.json root')
+    it('load from package.json')
+    it('ignore docpress.json')
+    it('override docs/')
+  })
+
+  describe('diff homepage', function () {
     it('allow linking of table of contents (!)')
     it('custom homepage instead of readme.md (!)')
-    it('warn when no pages are parsed')
-    it('move loading plugins into docpress-core/ms')
-    it('delete docpress.json')
   })
 
   describe('transforming html', function () {
@@ -33,6 +37,12 @@ describe('to do', function () {
     it('syntax highlighting', done)
     it('set meta description')
   })
+
+  describe('to do', function () {
+    it('warn when no pages are parsed')
+    it('move loading plugins into docpress-core/ms')
+  })
+
 })
 
 function done () {}

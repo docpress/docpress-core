@@ -28,8 +28,8 @@ describe('index/unused md files:', function () {
   })
 
   it('removes unprocessed .md files', function () {
-    expect(Object.keys(this.files)).toEqual([
+    expect(Object.keys(this.files).sort()).toEqual([
       '_docpress.json', 'index.html'
-    ])
+    ].sort())
   })
 })
