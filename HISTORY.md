@@ -5,6 +5,7 @@
 - The first page will always be the home page
 - You can now link Table of Contents as part of the site
 - Make heading ID's match what GitHub expects
+- Allow overriding documentation
 
 ## [v0.2.0]
 > Oct 12, 2015

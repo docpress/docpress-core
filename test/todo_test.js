@@ -21,10 +21,10 @@ describe('to do', function () {
   })
 
   describe('config', function () {
-    it('load from docpress.json root')
-    it('load from package.json')
-    it('ignore docpress.json')
-    it('override docs/')
+    it('load from docpress.json root', done)
+    it('load from package.json', done)
+    it('ignore docpress.json', done)
+    it('override docs/', done)
   })
 
   describe('diff homepage', function () {
