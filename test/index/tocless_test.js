@@ -10,7 +10,7 @@ describe('index/toc-less:', function () {
     }
 
     this.files = {
-      'README.md': { contents: '# hello\n' }
+      'README.md': { contents: 'hi\n\n# hello\n' }
     }
 
     compile(this.files, this.ms, (err) => {

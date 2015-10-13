@@ -9,6 +9,7 @@ describe('slugify', function () {
     })
   }
 
+  test('', undefined)
   test('hi', 'hi')
   test('usage.html', 'usage')
   test('/foo/index.html', 'foo')
