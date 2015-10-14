@@ -38,11 +38,16 @@ describe('to do', function () {
     it('set meta description')
   })
 
+  describe('markdown', function () {
+    it('allow plugins', done)
+    it('allow setting markdown-it configuration', done)
+  })
+
   describe('to do', function () {
     it('warn when no pages are parsed')
     it('move loading plugins into docpress-core/ms')
     it('invalid references should default to github')
-    it('auto-infer of github URL')
+    it('auto-infer of github URL (github-slug)')
   })
 })
 
