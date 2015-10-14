@@ -1,6 +1,8 @@
 /* istanbul ignore next */
-(function () {
-  var app = require('../../ms')(__dirname)
+(function() {
+  var docpress = require('../../ms')
+
+  var app = docpress(__dirname)
     .use(require('../../')())
 
   if (module.parent) {

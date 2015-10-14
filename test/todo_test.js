@@ -41,6 +41,8 @@ describe('to do', function () {
   describe('to do', function () {
     it('warn when no pages are parsed')
     it('move loading plugins into docpress-core/ms')
+    it('invalid references should default to github')
+    it('auto-infer of github URL')
   })
 })
 
