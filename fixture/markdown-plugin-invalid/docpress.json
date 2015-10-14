@@ -1,5 +1,7 @@
 {
   "markdown": {
-    "lalalala": {}
+    "plugins": {
+      "lalalala": {}
+    }
   }
 }

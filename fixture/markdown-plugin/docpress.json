@@ -1,5 +1,7 @@
 {
   "markdown": {
-    "decorate": {}
+    "plugins": {
+      "decorate": {}
+    }
   }
 }
