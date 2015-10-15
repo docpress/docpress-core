@@ -41,6 +41,9 @@ describe('to do', function () {
   describe('markdown', function () {
     it('allow plugins', done)
     it('allow setting markdown-it configuration', done)
+    it('bundle markdown-it-decorate (!)')
+    it('bundle markdown-it-checkbox (?)')
+    it('bundle markdown-it-emoji (?)')
   })
 
   describe('to do', function () {

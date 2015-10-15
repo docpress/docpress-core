@@ -1,3 +1,9 @@
+## [v0.4.0]
+> Oct 15, 2015
+
+- Allow customization of Markdown options
+- Allow loading markdown-it plugins
+
 ## [v0.3.1]
 > Oct 14, 2015
 
@@ -30,3 +36,4 @@
 [v0.2.0]: https://github.com/docpress/docpress-core/compare/v0.1.0...v0.2.0
 [v0.3.0]: https://github.com/docpress/docpress-core/compare/v0.2.0...v0.3.0
 [v0.3.1]: https://github.com/docpress/docpress-core/compare/v0.3.0...v0.3.1
+[v0.4.0]: https://github.com/docpress/docpress-core/compare/v0.3.1...v0.4.0
