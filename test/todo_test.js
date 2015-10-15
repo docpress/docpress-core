@@ -41,15 +41,13 @@ describe('to do', function () {
   describe('markdown', function () {
     it('allow plugins', done)
     it('allow setting markdown-it configuration', done)
-    it('bundle markdown-it-decorate (!)')
-    it('bundle markdown-it-checkbox (?)')
-    it('bundle markdown-it-emoji (?)')
+    it('bundle markdown-it-decorate', done)
   })
 
   describe('to do', function () {
     it('warn when no pages are parsed')
     it('move loading plugins into docpress-core/ms')
-    it('invalid references should default to github')
+    it('invalid non-md references should default to github')
     it('auto-infer of github URL (github-slug)')
   })
 })
