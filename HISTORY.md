@@ -1,3 +1,8 @@
+## [v0.5.2]
+> Oct 16, 2015
+
+- Add [markdown-it-decorate](https://www.npmjs.com/package/markdown-it-decorate) as an officially-supported plugin
+
 ## [v0.4.0]
 > Oct 15, 2015
 
@@ -37,3 +42,4 @@
 [v0.3.0]: https://github.com/docpress/docpress-core/compare/v0.2.0...v0.3.0
 [v0.3.1]: https://github.com/docpress/docpress-core/compare/v0.3.0...v0.3.1
 [v0.4.0]: https://github.com/docpress/docpress-core/compare/v0.3.1...v0.4.0
+[v0.5.2]: https://github.com/docpress/docpress-core/compare/v0.4.0...v0.5.2
