@@ -4,9 +4,8 @@ describe('index/toc-less:', function () {
   beforeEach(function (done) {
     // Mock metalsmith object
     this.ms = {
-      metadata () {
-        return { docs: 'docs' }
-      }
+      directory () { return __dirname },
+      metadata () { return { docs: 'docs' } }
     }
 
     this.files = {

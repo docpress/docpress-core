@@ -3,6 +3,7 @@ const compile = require('../../index')()
 describe('index/pre with quotes:', function () {
   beforeEach(function (done) {
     var ms = {
+      directory () { return __dirname },
       metadata () { return { docs: 'docs' } }
     }
 

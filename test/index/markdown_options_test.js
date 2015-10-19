@@ -4,6 +4,7 @@ describe('index/markdown options:', function () {
   beforeEach(function (done) {
     // Mock metalsmith object
     var ms = {
+      directory () { return __dirname },
       metadata () {
         return { docs: 'docs', markdown: { typographer: 'true' } }
       }

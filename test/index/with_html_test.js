@@ -3,6 +3,7 @@ const compile = require('../../index')()
 describe('index/with html:', function () {
   beforeEach(function (done) {
     var ms = {
+      directory () { return __dirname },
       metadata () { return { docs: 'docs' } }
     }
 

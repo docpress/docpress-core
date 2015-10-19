@@ -4,9 +4,8 @@ describe('index/unused md files:', function () {
   beforeEach(function (done) {
     // Mock metalsmith object
     var ms = {
-      metadata () {
-        return { docs: 'docs' }
-      }
+      directory () { return __dirname },
+      metadata () { return { docs: 'docs' } }
     }
 
     this.files = {

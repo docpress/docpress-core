@@ -4,9 +4,8 @@ describe('index/no meta data:', function () {
   beforeEach(function (done) {
     // Mock metalsmith object *without* `data`
     var ms = {
-      metadata () {
-        return {}
-      }
+      directory () { return __dirname },
+      metadata () { return {} }
     }
 
     this.files = {
