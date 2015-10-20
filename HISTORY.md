@@ -1,3 +1,8 @@
+## [v0.6.0]
+> Oct 20, 2015
+
+- Cache reuseable things - speeds up compiling drastically
+
 ## [v0.5.2]
 > Oct 16, 2015
 
@@ -43,3 +48,4 @@
 [v0.3.1]: https://github.com/docpress/docpress-core/compare/v0.3.0...v0.3.1
 [v0.4.0]: https://github.com/docpress/docpress-core/compare/v0.3.1...v0.4.0
 [v0.5.2]: https://github.com/docpress/docpress-core/compare/v0.4.0...v0.5.2
+[v0.6.0]: https://github.com/docpress/docpress-core/compare/v0.5.2...v0.6.0
