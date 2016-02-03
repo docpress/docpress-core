@@ -1,3 +1,11 @@
+## [v0.6.1]
+> Feb  3, 2016
+
+- [docpress#29]: Fix `mailto:` links not being allowed.
+
+[docpress#29]: https://github.com/docpress/docpress/issues/29
+[v0.6.1]: https://github.com/docpress/docpress-core/compare/v0.6.0...v0.6.1
+
 ## [v0.6.0]
 > Oct 20, 2015
 
