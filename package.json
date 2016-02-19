@@ -24,7 +24,7 @@
     "mocha": "2.4.4",
     "mocha-clean": "1.0.0",
     "mocha-standard": "1.0.0",
-    "standard": "5.4.1"
+    "standard": "6.0.7"
   },
   "directories": {
     "test": "test"
