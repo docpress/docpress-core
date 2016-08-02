@@ -1,3 +1,14 @@
+## [v0.6.13]
+> Aug  2, 2016
+
+- [#91] - Fix error with opening too many files when `node_modules` is big. ([@knownasilya])
+- [#87] - Make destination path (`dist`) configurable. ([@knownasilya])
+
+[#91]: https://github.com/docpress/docpress-core/issues/91
+[#87]: https://github.com/docpress/docpress-core/issues/87
+[@knownasilya]: https://github.com/knownasilya
+[v0.6.13]: https://github.com/docpress/docpress-core/compare/v0.6.1...v0.6.13
+
 ## [v0.6.1]
 > Feb  3, 2016
 

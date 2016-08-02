@@ -1,7 +1,7 @@
 {
   "name": "docpress-core",
   "description": "Metalsmith plugin to generate Docpress site data from a project. Part of the [Docpress] project.",
-  "version": "0.6.1",
+  "version": "0.6.13",
   "author": "Rico Sta. Cruz <rico@ricostacruz.com>",
   "bugs": {
     "url": "https://github.com/docpress/docpress-core/issues"
