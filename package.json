@@ -7,7 +7,7 @@
     "url": "https://github.com/docpress/docpress-core/issues"
   },
   "dependencies": {
-    "cheerio": "0.20.0",
+    "cheerio": "0.21.0",
     "debug": "2.2.0",
     "highlight.js": "9.5.0",
     "lodash": "3.10.1",
