@@ -33,13 +33,13 @@ describe('indexify', function () {
     const res = indexify(toc)
     expect(res.index).toEqual({
       'install.html': {
-        source: 'docs/install.md', title: 'Install - Readme', slug: 'install'
+        source: 'docs/install.md', title: 'Install - Readme', sectionTitle: 'Install', slug: 'install'
       },
       'usage.html': {
-        source: 'docs/usage.md', title: 'Usage - Readme', slug: 'usage'
+        source: 'docs/usage.md', title: 'Usage - Readme', sectionTitle: 'Usage', slug: 'usage'
       },
       'index.html': {
-        source: 'README.md', title: 'Readme', slug: 'index'
+        source: 'README.md', title: 'Readme', sectionTitle: 'Readme', slug: 'index'
       }
     })
   })
