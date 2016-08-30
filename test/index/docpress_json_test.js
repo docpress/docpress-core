@@ -20,7 +20,7 @@ describe('index/docpress.json:', function () {
     })
   })
 
-  xit('removes docpress.json', function () {
+  it('removes docpress.json', function () {
     expect(this.files['docpress.json']).toNotExist()
   })
 })
