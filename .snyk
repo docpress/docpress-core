@@ -1,0 +1,6 @@
+version: v1.5.0
+ignore: {}
+patch:
+  'npm:minimatch:20160620':
+    - metalsmith > recursive-readdir > minimatch:
+        patched: '2016-09-08T14:14:12.970Z'
