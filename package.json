@@ -2,7 +2,7 @@
   "name": "docpress-core",
   "description": "Metalsmith plugin to generate Docpress site data from a project. Part of the [Docpress] project.",
   "homepage": "https://github.com/docpress/docpress-core#readme",
-  "version": "0.6.13",
+  "version": "0.7.0",
   "main": "index.js",
   "author": {
     "email": "rico@ricostacruz.com",
@@ -36,6 +36,13 @@
     "nyc": "~8.3.0",
     "standard": "~8.3.0"
   },
+  "scripts": {
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "standard",
+    "pretest": "npm run lint",
+    "test": "nyc mocha"
+  },
+  "license": "MIT",
   "standard": {
     "global": [
       "before",
@@ -44,12 +51,5 @@
       "expect",
       "it"
     ]
-  },
-  "scripts": {
-    "coveralls": "nyc report --reporter=text-lcov | coveralls",
-    "lint": "standard",
-    "pretest": "npm run lint",
-    "test": "nyc mocha"
-  },
-  "license": "MIT"
+  }
 }
