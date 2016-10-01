@@ -17,14 +17,28 @@ describe('tocifyPage(): with stuff', function () {
   })
 
   it('renders', function () {
-    expect(output).toEqual([
-      { title: 'Usage', depth: 2, id: 'usage' },
-      { title: 'Installation', depth: 2, id: 'installation', headings: [
-        { title: 'via npm', depth: 3, id: 'via-npm' },
-        { title: 'via Bower', depth: 3, id: 'via-bower' }
-      ]},
-      { title: 'Thanks', depth: 2, id: 'thanks' }
-    ])
+    expect(output).toEqual([{
+      title: 'Usage',
+      depth: 2,
+      id: 'usage'
+    }, {
+      title: 'Installation',
+      depth: 2,
+      id: 'installation',
+      headings: [{
+        title: 'via npm',
+        depth: 3,
+        id: 'via-npm'
+      }, {
+        title: 'via Bower',
+        depth: 3,
+        id: 'via-bower'
+      }]
+    }, {
+      title: 'Thanks',
+      depth: 2,
+      id: 'thanks'
+    }])
   })
 })
 
