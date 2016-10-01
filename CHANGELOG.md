@@ -1,3 +1,10 @@
+<a name="0.7.1"></a>
+## 0.7.1 (2016-10-01)
+
+* Remove TIL ([770a259](https://github.com/docpress/docpress-core/commit/770a259))
+
+
+
 <a name="0.7.0"></a>
 # 0.7.0 (2016-10-01)
 
