@@ -18,7 +18,7 @@
   "dependencies": {
     "cheerio": "0.22.0",
     "debug": "2.2.0",
-    "highlight.js": "9.7.0",
+    "highlight.js": "9.8.0",
     "lodash": "4.16.4",
     "lru-cache": "4.0.1",
     "markdown-it": "8.1.0",
