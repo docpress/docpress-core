@@ -21,7 +21,7 @@
     "highlight.js": "9.7.0",
     "lodash": "4.16.4",
     "lru-cache": "4.0.1",
-    "markdown-it": "8.0.0",
+    "markdown-it": "8.0.1",
     "markdown-it-decorate": "1.2.1",
     "marked": "0.3.6",
     "metalsmith": "2.3.0",
