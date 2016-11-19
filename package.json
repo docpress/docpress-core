@@ -19,7 +19,7 @@
     "cheerio": "0.22.0",
     "debug": "2.3.3",
     "highlight.js": "9.8.0",
-    "lodash": "4.16.5",
+    "lodash": "4.17.2",
     "lru-cache": "4.0.1",
     "markdown-it": "8.1.0",
     "markdown-it-decorate": "1.2.1",
