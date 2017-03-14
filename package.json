@@ -31,7 +31,7 @@
   "devDependencies": {
     "coveralls": "2.11.15",
     "expect": "1.20.2",
-    "mocha": "3.1.2",
+    "mocha": "3.2.0",
     "mocha-clean": "1.0.0",
     "nyc": "9.0.1",
     "standard": "8.4.0"
