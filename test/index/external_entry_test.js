@@ -19,7 +19,6 @@ describe('index/external pages:', function () {
         contents: '# hello\n'
       }
     }
-
     compile(this.files, ms, (err) => {
       if (err) throw err
       done()
