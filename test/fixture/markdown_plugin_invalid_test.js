@@ -5,7 +5,7 @@ const fixture = require('../support/fixture')
 describe('fixture/markdown plugin invalid:', function () {
   let app
 
-  let fx = fixture('markdown-plugin-invalid')
+  const fx = fixture('markdown-plugin-invalid')
 
   before(function (done) {
     app = require(fx.path('metalsmith.js'))

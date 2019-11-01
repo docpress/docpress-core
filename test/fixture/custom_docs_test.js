@@ -5,7 +5,7 @@ const fixture = require('../support/fixture')
 describe('fixture/custom docs:', function () {
   let app
 
-  let fx = fixture('custom-docs')
+  const fx = fixture('custom-docs')
 
   before(function (done) {
     app = require(fx.path('metalsmith.js'))

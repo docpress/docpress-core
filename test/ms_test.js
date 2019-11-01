@@ -7,7 +7,7 @@ describe('ms', function () {
   const fx = fixture('with-config')
 
   it('works', function () {
-    let app = ms(fx.path())
+    const app = ms(fx.path())
     expect(app.metadata().custom).toEqual(true)
   })
 })

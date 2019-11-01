@@ -5,7 +5,7 @@ const fixture = require('../support/fixture')
 describe('fixture/with anchors:', function () {
   let app
 
-  let fx = fixture('with-anchors')
+  const fx = fixture('with-anchors')
 
   before(function (done) {
     app = require(fx.path('metalsmith.js'))
