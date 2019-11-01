@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.1"></a>
+## [0.9.1](https://github.com/docpress/docpress-core/compare/v0.9.0...v0.9.1) (2019-11-01)
+
+
+### Bug Fixes
+
+* **deps:** audit ([63b5069](https://github.com/docpress/docpress-core/commit/63b5069))
+* drop node4 from travis ([e03baa5](https://github.com/docpress/docpress-core/commit/e03baa5))
+
+
+
 <a name="0.9.0"></a>
 # [0.9.0](https://github.com/docpress/docpress-core/compare/v0.8.0...v0.9.0) (2018-11-06)
 
