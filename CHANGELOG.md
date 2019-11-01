@@ -1,6 +1,18 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [0.10.0](https://github.com/docpress/docpress-core/compare/v0.9.1...v0.10.0) (2019-11-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* drops node 6 support
+
+### Bug Fixes
+
+* drop node 6 ([3876c59](https://github.com/docpress/docpress-core/commit/3876c5942cc961ba1db4446c51f6f623df4f5740))
+* update dev deps, and some non dev, and auto fix styles ([2babf3b](https://github.com/docpress/docpress-core/commit/2babf3bbbb0e2b0f4d40a602fa9956a24dc2c683))
 
 <a name="0.9.1"></a>
 ## [0.9.1](https://github.com/docpress/docpress-core/compare/v0.9.0...v0.9.1) (2019-11-01)
