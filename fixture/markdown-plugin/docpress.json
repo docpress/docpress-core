@@ -1,7 +1,9 @@
 {
   "markdown": {
-    "plugins": {
-      "decorate": {}
-    }
+    "plugins": [
+      "decorate", {
+      "name": "decorate",
+      "options": {}
+    }]
   }
 }
