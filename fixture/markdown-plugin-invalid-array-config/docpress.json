@@ -1,0 +1,9 @@
+{
+  "markdown": {
+    "plugins": [
+      "lalalala", {
+      "name": "lalalala",
+      "options": {}
+    }]
+  }
+}
