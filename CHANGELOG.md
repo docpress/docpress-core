@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.10.1](https://github.com/docpress/docpress-core/compare/v0.10.0...v0.10.1) (2019-12-01)
+
+
+### Features
+
+* modify parameters format to array for markdown-it plugin ([#204](https://github.com/docpress/docpress-core/issues/204)) ([3af155a](https://github.com/docpress/docpress-core/commit/3af155ad2a292581b858022b8a788e0835e39518))
+
 ## [0.10.0](https://github.com/docpress/docpress-core/compare/v0.9.1...v0.10.0) (2019-11-01)
 
 
