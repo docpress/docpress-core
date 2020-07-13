@@ -35,7 +35,7 @@
     "mocha-clean": "1.0.0",
     "nyc": "^14.1.1",
     "standard": "^14.3.1",
-    "standard-version": "^7.0.0"
+    "standard-version": "^8.0.1"
   },
   "scripts": {
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
