@@ -6,6 +6,7 @@ describe('tocify: relative', function () {
   let output
 
   it('handles relative URLs', function () {
+    debugger
     output = tocify([
       '* [Readme](../README.md)',
       '* [Install](install.md)'
